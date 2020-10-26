@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS02_ElvinSanchez.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Universidad Tecnologica Israel" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="25" />
+            <Label Text="Sistema de Calificaciones" HorizontalTextAlignment="Center" TextColor="DarkSlateBlue" FontSize="20" />
+            <Image Source="uisrael.jpg" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="1" Source="login.png" HorizontalOptions="Start" WidthRequest="20" HeightRequest="20"/>
+                <Entry Grid.Row="1" x:Name="txtUser" Placeholder="Usuario" HorizontalTextAlignment="Center" />
+                <Image Grid.Row="2" Source="pass.png" HorizontalOptions="Start" WidthRequest="20" HeightRequest="20"/>
+                <Entry Grid.Row="2" x:Name="txtPass" Placeholder="Contraseña" IsPassword="True" HorizontalTextAlignment="Center"/>
+            </Grid>
+
+            <Button x:Name="btnIngresar" Text="INGRESAR" Clicked="btnIngresar_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

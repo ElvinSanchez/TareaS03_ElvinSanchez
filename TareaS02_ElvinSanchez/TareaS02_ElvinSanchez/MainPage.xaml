@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaS02_ElvinSanchez.MainPage">
+
+    <StackLayout>
+        <Label Text="Universidad Tecnologica Israel" HorizontalTextAlignment="Center" TextColor="DarkBlue" FontSize="25">
+        </Label>
+        
+        <Label Text="Sistema de Calificaciones" HorizontalTextAlignment="Center" TextColor="DarkSlateBlue" FontSize="20">
+        </Label>
+
+        <Label Text="Primer Parcial" HorizontalTextAlignment="Start" TextColor="Black" FontSize="20">
+        </Label>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Ingrese la nota de segimiento"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="Nota Seguimiento P1"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="Ingrese la nota de Examen"/>
+            <Label Grid.Row="0" Grid.Column="3" Text="Nota Examen P1"/>
+            <Label Grid.Row="0" Grid.Column="4" Text="Total P1" HorizontalTextAlignment="Center"/>
+            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtDato1" Keyboard="Numeric" HorizontalTextAlignment="Center" FontSize="30" />
+            <BoxView Grid.Row="1" Grid.Column="1" Color="LightGray"/>
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtP1" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="30" />
+            <Entry Grid.Row="1" Grid.Column="2" x:Name="txtDato2" Keyboard="Numeric" HorizontalTextAlignment="Center" FontSize="30" />
+            <BoxView Grid.Row="1" Grid.Column="3" Color="LightGray"/>
+            <Entry Grid.Row="1" Grid.Column="3" x:Name="txtEP1" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="30" />
+            <BoxView Grid.Row="1" Grid.Column="4" Color="LightBlue"/>
+            <Entry Grid.Row="1" Grid.Column="4" x:Name="txtTP1" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="30" />
+        </Grid>
+
+        <Label Text="Segundo Parcial" HorizontalTextAlignment="Start" TextColor="Black" FontSize="20">
+        </Label>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Ingrese la nota de segimiento"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="Nota Seguimiento P2"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="Ingrese la nota de Examen"/>
+            <Label Grid.Row="0" Grid.Column="3" Text="Nota Examen P2"/>
+            <Label Grid.Row="0" Grid.Column="4" Text="Total P2" HorizontalTextAlignment="Center" />
+            <Entry Grid.Row="1" Grid.Column="0" x:Name="txtDato3" Keyboard="Numeric" HorizontalTextAlignment="Center" FontSize="30" />
+            <BoxView Grid.Row="1" Grid.Column="1" Color="LightGray"/>
+            <Entry Grid.Row="1" Grid.Column="1" x:Name="txtP2" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="30" />
+            <Entry Grid.Row="1" Grid.Column="2" x:Name="txtDato4" Keyboard="Numeric" HorizontalTextAlignment="Center" FontSize="30" />
+            <BoxView Grid.Row="1" Grid.Column="3" Color="LightGray"/>
+            <Entry Grid.Row="1" Grid.Column="3" x:Name="txtEP2" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="30" />
+            <BoxView Grid.Row="1" Grid.Column="4" Color="LightBlue"/>
+            <Entry Grid.Row="1" Grid.Column="4" x:Name="txtTP2" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="30" />
+        </Grid>
+
+        <Button x:Name="btnCalcular"
+                Text="Calcular"
+                Clicked="btnCalcular_Clicked">
+        </Button>
+
+        <Label Text="Nota Final" HorizontalTextAlignment="Center" TextColor="DarkRed" FontSize="25"></Label>
+        <Entry x:Name="txtResultado" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="40" TextColor="DarkRed">
+        </Entry>
+
+        <Entry x:Name="txtNota" IsReadOnly="True" HorizontalTextAlignment="Center" FontSize="40" TextColor="DarkRed">
+        </Entry>
+
+    </StackLayout>
+
+</ContentPage>
