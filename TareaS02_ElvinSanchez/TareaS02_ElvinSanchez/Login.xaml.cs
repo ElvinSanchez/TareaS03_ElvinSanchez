@@ -19,6 +19,7 @@ namespace TareaS02_ElvinSanchez
 
         private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
+            //para el texto de login
             string user = txtUser.Text;
             string pass = txtPass.Text;   
             
